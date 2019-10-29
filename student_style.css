@@ -9,6 +9,12 @@ body {
     border-radius: 24px;
 }
 
+.demo-avatar-big {
+    width: 100px;
+    height: 100px;
+    border-radius: 24px;
+}
+
 .demo-layout .mdl-layout__header .mdl-layout__drawer-button {
     color: rgba(0, 0, 0, 0.54);
 }
@@ -239,4 +245,12 @@ _:-ms-input-placeholder,
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+}
+
+.details {
+    font-size: 1.2em;
+    font-family: "Roboto";
+    font-style: bold;
+    color: #37474F;
+    line-height: 0.05;
 }
