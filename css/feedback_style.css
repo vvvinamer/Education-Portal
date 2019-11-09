@@ -295,3 +295,23 @@ input[type=reset]:active {
     -ms-transform: scale(0.95);
     transform: scale(0.95);
 }
+
+@media only screen and (min-width: 840px) {
+    #main-content{
+        transform: translateY(15%);
+    }
+  }
+
+  @media only screen and (max-width: 840px) {
+    #main-content{
+        transform: translateY(10%);
+    }
+  }
+
+#dropdowns{
+    padding-bottom: 20px;
+}
+
+.dropdown{
+    padding-right: 10px;
+}

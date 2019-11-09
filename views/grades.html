@@ -38,6 +38,8 @@
     <link rel="stylesheet" type="text/css" href="../vendor/animate/animate.css">
     <link rel="stylesheet" type="text/css" href="../vendor/perfect-scrollbar/perfect-scrollbar.css">
     <link rel="stylesheet" type="text/css" href="../css/util.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <style>
         #view-source {
             position: fixed;
@@ -53,34 +55,44 @@
 
 <body>
     <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
-        <div class="demo-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
-            <header class="demo-drawer-header">
-                <img src="../images/user.jpg" class="demo-avatar">
-                <div class="demo-avatar-dropdown">
-                    <span>abcxyz@iiita.ac.in</span>
-                    <div class="mdl-layout-spacer"></div>
+            <div class="demo-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
+          
+                    <header class="demo-drawer-header">
+                        <img src="../images/user.jpg" class="demo-avatar">
+                        <div class="demo-avatar-dropdown">
+                            <span>abcxyz@iiita.ac.in</span>
+                            <div class="mdl-layout-spacer"></div>
+                        </div>
+                    </header>
+                    <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
+                        <a class="mdl-navigation__link" href="student.html"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">home</i>Home</a>
+                        <a class="mdl-navigation__link" href="grades.html"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">inbox</i>Grades</a>
+                        <a class="mdl-navigation__link" href="feedback.html"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">forum</i>Feedback</a>
+                        <a class="mdl-navigation__link" href="index.html"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">flag</i>Sign Out</a>
+                    </nav>
                 </div>
-            </header>
-            <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
-                <a class="mdl-navigation__link" href="student.html"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">home</i>Home</a>
-                <a class="mdl-navigation__link" href="grades.html"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">inbox</i>Grades</a>
-                <a class="mdl-navigation__link" href="feedback.html"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">forum</i>Feedback</a>
-                <a class="mdl-navigation__link" href="index.html"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">flag</i>Sign Out</a>
-            </nav>
-        </div>
 
         <main class="mdl-layout__content mdl-color--grey-100">
-            <div class="mdl-grid demo-content">
+            <div class="mdl-grid demo-content" id="main-content">
                 <div class="wrap-contact100">
                     <form class="contact100-form validate-form">
                         <span class="contact100-form-title">
                         Grades
                         </span>
+                        <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Semester
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="drwrap-tableopdownMenuButton">
+                                  <a class="dropdown-item" href="#">1</a>
+                                  <a class="dropdown-item" href="#">2</a>
+                                  <a class="dropdown-item" href="#">3</a>
+                                </div>
+                        </div>
                         <!-- Here goes the dropdowns etc -->
 
                         <!-- Feedback message starts -->
-                        <div class="limiter">
-                            <div class="container-table100">
+                        <div class="container-table100">
                                 <div class="wrap-table100">
                                     <div class="table100">
                                         <table>
@@ -95,7 +107,9 @@
                                                     <td class="column1">ICNE532</td>
                                                     <td class="column2">A</td>
 
-                                                </tr>
+                                                    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+                                                    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+                                                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>                  </tr>
                                                 <tr>
                                                     <td class="column1">ICNE532</td>
                                                     <td class="column2">A</td>
@@ -108,7 +122,9 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="column1">ICNE532</td>
-                                                    <td class="column2">A</td>
+                                                    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+                                                    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+                                                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>                      <td class="column2">A</td>
 
                                                 </tr>
                                                 <tr>
@@ -121,7 +137,6 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
                     </form>
                 </div>
@@ -138,6 +153,9 @@
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
     <!--===============================================================================================-->
     <script src="vendor/select2/select2.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>
