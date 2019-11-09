@@ -254,3 +254,29 @@ _:-ms-input-placeholder,
     color: #37474F;
     line-height: 0.05;
 }
+
+/* #main-content{
+    background-color: lightgray;
+} */
+
+@media only screen and (min-width: 840px) {
+    #main-content{
+        transform: translateY(15%);
+    }
+  }
+
+  @media only screen and (max-width: 840px) {
+    #main-content{
+        transform: translateY(10%);
+    }
+  }
+
+.list-items{
+    padding-bottom: 3px;
+}
+
+#courses-list{
+    max-height: 200px;
+    overflow-y: scroll;
+}
+
