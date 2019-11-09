@@ -6,9 +6,14 @@
     <title>Login</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="css/index_style.css">
+    <link rel="stylesheet" type="text/css" href="../css/index_style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
+
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-database.js"></script>
 </head>
 
 <body class="body">
@@ -33,11 +38,20 @@
             <form>
                 <input type="text" id="login" class="fadeIn second" name="login" placeholder="Login">
                 <input type="password" id="password" class="fadeIn third" name="login" placeholder="Password">
-                <input onclick="window.location.href = 'student.html';" type="button" class="fadeIn fourth" value="Log In">
+                <input onclick="onLoginClick()" type="button" class="fadeIn fourth" value="Log In">
             </form>
 
         </div>
     </div>
+
+    <script type="text/javascript" src="../login.js">
+        function onLoginClick() {
+            const email = document.getElementById("login");
+            const password = document.getElementById("password");
+
+            loging.onLoginClick(email, password);
+        }
+    </script>
 
 </body>
 
