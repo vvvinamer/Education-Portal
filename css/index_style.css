@@ -3,12 +3,14 @@
 
 /* BASIC */
 
-html {
-    background-image: linear-gradient(#56baed, #9fdfff);
-}
+/* html {
+    background-image: linear-gradient(#edcca6, #9fdfff);
+} */
 
 body {
     font-family: "Poppins", sans-serif;
+    background: linear-gradient(rgba(35,35,35,.5), rgba(35, 35, 35, 0.5)), url("/images/bh1.jpg") no-repeat round;
+    /* background-image: url("/images/bh1.jpg"); */
     height: 100vh;
 }
 
@@ -49,7 +51,10 @@ h2 {
     padding: 30px;
     width: 90%;
     max-width: 450px;
-    position: relative;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     padding: 0px;
     -webkit-box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
     box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
@@ -74,7 +79,7 @@ h2.inactive {
 
 h2.active {
     color: #0d0d0d;
-    border-bottom: 2px solid #5fbae9;
+    border-bottom: 2px solid #e3b98a;
 }
 
 
@@ -83,7 +88,7 @@ h2.active {
 input[type=button],
 input[type=submit],
 input[type=reset] {
-    background-color: #56baed;
+    background-color: #edcca6;
     border: none;
     color: white;
     padding: 15px 80px;
@@ -107,7 +112,7 @@ input[type=reset] {
 input[type=button]:hover,
 input[type=submit]:hover,
 input[type=reset]:hover {
-    background-color: #39ace7;
+    background-color: #e3b98a;
 }
 
 input[type=button]:active,
@@ -121,9 +126,9 @@ input[type=reset]:active {
 }
 
 input[type=text] {
-    background-color: #d4f3ff;
+    background-color: #ffe9d4;
     border: none;
-    color: #56baed;
+    color: #edcca6;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -143,7 +148,7 @@ input[type=text] {
 
 input[type=text]:focus {
     background-color: #fff;
-    border-bottom: 2px solid #5fbae9;
+    border-bottom: 2px solid #e3b57f;
 }
 
 input[type=text]:placeholder {
@@ -151,9 +156,9 @@ input[type=text]:placeholder {
 }
 
 input[type=password] {
-    background-color: #d4f3ff;
+    background-color: #ffe9d4;
     border: none;
-    color: #56baed;
+    color: #edcca6;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -173,7 +178,7 @@ input[type=password] {
 
 input[type=password]:focus {
     background-color: #fff;
-    border-bottom: 2px solid #5fbae9;
+    border-bottom: 2px solid #e3b57f;
 }
 
 input[type=password]:placeholder {
@@ -297,7 +302,7 @@ input[type=password]:placeholder {
     bottom: -10px;
     width: 0;
     height: 2px;
-    background-color: #56baed;
+    background-color: #edcca6;
     content: "";
     transition: width 0.2s;
 }
@@ -335,7 +340,7 @@ input[type=radio] {
 }
 
 label {
-    color: #56baed;
+    color: #edcca6;
     display: inline-block;
     cursor: pointer;
     font-weight: bold;
@@ -344,17 +349,25 @@ label {
 
 input[type=radio]:checked+label {
     color: #ffffff;
-    background: #56baed;
+    background: #edcca6;
 }
 
 label+input[type=radio]+label {
-    border-left: solid 0px #56baed;
+    border-left: solid 0px #edcca6;
 }
 
 .radio-group {
-    border: solid 2px #56baed;
+    border: solid 2px #edcca6;
     display: inline-block;
     margin: 5px;
     border-radius: 20px;
     overflow: hidden;
+}
+
+#heading{
+    color: #ffffff;
+    font-size: 70px;
+    letter-spacing: 3px;
+    position: absolute;
+    top: 5%;
 }
